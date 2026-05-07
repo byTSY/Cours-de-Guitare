@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2 — Les accords · Cours de guitare</title>
+  <meta name="description" content="Les accords à la guitare : 8 accords ouverts, F majeur, accords barrés, accords de 7e, progressions essentielles.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container-wide">
+    <a href="index.html" class="brand">Cours de guitare<span class="ornament">◈</span></a>
+    <nav class="site-nav">
+      <a href="module-1.html">1. Manche</a>
+      <a href="module-2.html" class="active">2. Accords</a>
+      <a href="module-3.html">3. Programme</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <article>
+      <div class="module-meta">Module II</div>
+      <h1>Les accords</h1>
+      <p class="module-intro">
+        Lire un schéma, maîtriser les accords ouverts essentiels, comprendre la logique des barrés et des accords de 7e, et jouer tes premières progressions complètes — blues 12 mesures et progression Beatles.
+      </p>
+
+      <nav class="toc">
+        <div class="toc-title">Sommaire</div>
+        <ol>
+          <li><a href="#lire">Lire un schéma d'accord</a></li>
+          <li><a href="#anatomie">Anatomie d'un accord</a></li>
+          <li><a href="#ouverts">Les 8 accords ouverts essentiels</a></li>
+          <li><a href="#fa">F majeur — l'accord-frontière</a></li>
+          <li><a href="#barres">Accords barrés — la logique générale</a></li>
+          <li><a href="#septiemes">Accords de 7e — le son du blues</a></li>
+          <li><a href="#progressions">Progressions essentielles</a></li>
+          <li><a href="#exercices">Exercices d'application</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="lire">1. Lire un schéma d'accord</h2>
+      <p>Tout au long du cours, j'utilise le <strong>schéma SVG vertical</strong>. Voici comment le lire :</p>
+
+      <div class="practice-block">
+        <h4>Légende</h4>
+        <ul>
+          <li><strong>6 lignes verticales</strong> = les 6 cordes (à gauche : corde 6 / Mi grave ; à droite : corde 1 / Mi aigu)</li>
+          <li><strong>Lignes horizontales</strong> = les frettes</li>
+          <li><strong>Ligne épaisse en haut</strong> = le sillet (frette 0)</li>
+          <li><strong>Pastille rouge</strong> = corde pressée à cette frette ; le chiffre dedans indique le doigt à utiliser</li>
+          <li><strong>○</strong> au-dessus = corde jouée à vide</li>
+          <li><strong>×</strong> au-dessus = corde non jouée (à étouffer)</li>
+        </ul>
+      </div>
+
+      <h3>Numérotation des doigts</h3>
+      <p>1 = index &middot; 2 = majeur &middot; 3 = annulaire &middot; 4 = auriculaire</p>
+
+      <h3>Notation compacte 6 chiffres</h3>
+      <p>On rencontre souvent une notation à 6 caractères, lue de la <strong>corde 6 vers la corde 1</strong> :</p>
+      <pre><code>Em → 022000     (corde 6 à vide, A frette 2, D frette 2, G/B/E aigu à vide)
+C  → x32010     (corde 6 muette, A frette 3, D frette 2, G à vide, B frette 1, E aigu à vide)</code></pre>
+
+      <h2 id="anatomie">2. Anatomie d'un accord</h2>
+      <p>Un <strong>accord majeur</strong> est construit avec 3 notes :</p>
+      <ul>
+        <li>La <strong>tonique</strong> (1)</li>
+        <li>La <strong>tierce majeure</strong> (3) — 4 demi-tons au-dessus de la tonique</li>
+        <li>La <strong>quinte juste</strong> (5) — 7 demi-tons au-dessus de la tonique</li>
+      </ul>
+      <p>Exemple : <strong>C majeur</strong> = C — E — G</p>
+
+      <p>Un <strong>accord mineur</strong> remplace la tierce majeure par une <strong>tierce mineure (♭3)</strong> — 3 demi-tons au-dessus seulement.</p>
+      <p>Exemple : <strong>C mineur (Cm)</strong> = C — E♭ — G</p>
+
+      <blockquote>
+        <strong>À retenir :</strong> la différence entre majeur et mineur tient à <strong>un seul demi-ton</strong>, sur la tierce. Tout le reste est identique.
+      </blockquote>
+
+      <h2 id="ouverts">3. Les 8 accords ouverts essentiels</h2>
+      <p>Ces 8 accords te permettent de jouer la majorité du répertoire pop/folk/Beatles.</p>
+
+      <h3>Accords mineurs ouverts</h3>
+      <div class="chord-grid">
+        <div class="chord-card">
+          <div class="chord-card-name">Em</div>
+          <div class="chord-card-subtitle">Mi mineur</div>
+          <div class="chord-diagram"
+               data-voicing="0,2,2,0,0,0"
+               data-fingers="0,2,3,0,0,0"></div>
+          <div class="chord-card-notation">022000</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">Am</div>
+          <div class="chord-card-subtitle">La mineur</div>
+          <div class="chord-diagram"
+               data-voicing="x,0,2,2,1,0"
+               data-fingers="0,0,2,3,1,0"></div>
+          <div class="chord-card-notation">x02210</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">Dm</div>
+          <div class="chord-card-subtitle">Ré mineur</div>
+          <div class="chord-diagram"
+               data-voicing="x,x,0,2,3,1"
+               data-fingers="0,0,0,2,3,1"></div>
+          <div class="chord-card-notation">xx0231</div>
+        </div>
+      </div>
+
+      <h3>Accords majeurs ouverts</h3>
+      <div class="chord-grid">
+        <div class="chord-card">
+          <div class="chord-card-name">E</div>
+          <div class="chord-card-subtitle">Mi majeur</div>
+          <div class="chord-diagram"
+               data-voicing="0,2,2,1,0,0"
+               data-fingers="0,2,3,1,0,0"></div>
+          <div class="chord-card-notation">022100</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">A</div>
+          <div class="chord-card-subtitle">La majeur</div>
+          <div class="chord-diagram"
+               data-voicing="x,0,2,2,2,0"
+               data-fingers="0,0,1,2,3,0"></div>
+          <div class="chord-card-notation">x02220</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">D</div>
+          <div class="chord-card-subtitle">Ré majeur</div>
+          <div class="chord-diagram"
+               data-voicing="x,x,0,2,3,2"
+               data-fingers="0,0,0,1,3,2"></div>
+          <div class="chord-card-notation">xx0232</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">G</div>
+          <div class="chord-card-subtitle">Sol majeur</div>
+          <div class="chord-diagram"
+               data-voicing="3,2,0,0,0,3"
+               data-fingers="2,1,0,0,0,3"></div>
+          <div class="chord-card-notation">320003</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">C</div>
+          <div class="chord-card-subtitle">Do majeur</div>
+          <div class="chord-diagram"
+               data-voicing="x,3,2,0,1,0"
+               data-fingers="0,3,2,0,1,0"></div>
+          <div class="chord-card-notation">x32010</div>
+        </div>
+      </div>
+
+      <blockquote>
+        <strong>Variante du G recommandée à terme</strong> (pour les transitions fluides vers C) : doigt 2 sur corde 6 frette 3, doigt 1 sur corde 5 frette 2, <strong>doigt 4 (auriculaire)</strong> sur corde 1 frette 3. Ça libère le doigt 3, prêt à se poser sur la corde 5 frette 3 pour faire C juste après.
+      </blockquote>
+
+      <h2 id="fa">4. F majeur — l'accord-frontière</h2>
+      <p>
+        F majeur n'a <strong>pas de version « complète » en accord ouvert</strong> sur guitare. Il existe une version simplifiée à 4 cordes, et une version barré à 6 cordes (plus difficile mais beaucoup plus puissante).
+      </p>
+
+      <div class="chord-grid">
+        <div class="chord-card">
+          <div class="chord-card-name">F</div>
+          <div class="chord-card-subtitle">simplifié — 4 cordes</div>
+          <div class="chord-diagram"
+               data-voicing="x,x,3,2,1,1"
+               data-fingers="0,0,3,2,1,1"></div>
+          <div class="chord-card-notation">xx3211</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">F</div>
+          <div class="chord-card-subtitle">barré — 6 cordes</div>
+          <div class="chord-diagram"
+               data-voicing="1,3,3,2,1,1"
+               data-fingers="1,3,4,2,1,1"></div>
+          <div class="chord-card-notation">133211</div>
+        </div>
+      </div>
+
+      <div class="practice-block">
+        <h4>Le geste clé du F simplifié</h4>
+        <p>L'index couvre <strong>simultanément</strong> les cordes 1 et 2 sur la frette 1 (mini-barré). Pose l'index bien droit, légèrement en biais, pression sur le côté du doigt plutôt qu'à plat.</p>
+      </div>
+
+      <blockquote>
+        <strong>Conseil :</strong> passe 2-3 semaines sur la version simplifiée avant d'attaquer le barré complet. Tu n'as pas besoin du barré pour jouer 95% des morceaux Beatles débutant.
+      </blockquote>
+
+      <h2 id="barres">5. Accords barrés — la logique générale</h2>
+      <p>Un accord barré fonctionne en 2 étapes :</p>
+      <ol>
+        <li><strong>L'index fait office de sillet mobile</strong> en pressant toutes (ou plusieurs) cordes sur une frette donnée.</li>
+        <li><strong>Les autres doigts forment une « forme » connue</strong> (forme E ou forme A) décalée vers le haut.</li>
+      </ol>
+
+      <h3>Forme E (basée sur E majeur ouvert)</h3>
+      <p>Si tu prends E ouvert (022100) et que ton index « remplace » le sillet sur la frette 1, tu obtiens <strong>F majeur barré</strong> (133211). En décalant cette forme :</p>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Frette du barré (index)</th><th>Accord obtenu</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>F</td></tr>
+            <tr><td>2</td><td>F♯</td></tr>
+            <tr><td>3</td><td>G</td></tr>
+            <tr><td>4</td><td>G♯</td></tr>
+            <tr><td>5</td><td>A</td></tr>
+            <tr><td>7</td><td>B</td></tr>
+            <tr><td>8</td><td>C</td></tr>
+            <tr><td>10</td><td>D</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <blockquote>
+        <strong>Règle :</strong> la note jouée par l'index sur la <strong>corde 6</strong> te donne le nom de l'accord. Frette 5 sur corde 6 = A → barré frette 5 forme E = A majeur.
+      </blockquote>
+
+      <h3>Forme A (basée sur A majeur ouvert)</h3>
+      <p>Si tu prends A ouvert (x02220) et que l'index barre la frette 1 sur les cordes 5 à 1, tu obtiens <strong>B♭ majeur</strong> (x13331).</p>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Frette du barré</th><th>Accord obtenu</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>B♭</td></tr>
+            <tr><td>2</td><td>B</td></tr>
+            <tr><td>3</td><td>C</td></tr>
+            <tr><td>5</td><td>D</td></tr>
+            <tr><td>7</td><td>E</td></tr>
+            <tr><td>8</td><td>F</td></tr>
+            <tr><td>10</td><td>G</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <blockquote>
+        <strong>Règle :</strong> la note jouée par l'index sur la <strong>corde 5</strong> te donne le nom de l'accord. Frette 3 sur corde 5 = C → barré frette 3 forme A = C majeur.
+      </blockquote>
+
+      <p>Avec <strong>2 formes barrées</strong> + ta connaissance des notes sur les cordes 6 et 5 (Module 1), tu peux jouer <strong>n'importe quel accord majeur ou mineur</strong> sur le manche.</p>
+
+      <h2 id="septiemes">6. Accords de 7e — le son du blues</h2>
+      <p>
+        Le <strong>blues</strong> repose sur les <strong>accords de 7e de dominante</strong> (notés simplement « 7 » : E7, A7, B7…). On ajoute la <strong>7e mineure</strong> (10 demi-tons au-dessus de la tonique) à un accord majeur. Cette 7e mineure crée la tension caractéristique du blues.
+      </p>
+
+      <div class="chord-grid">
+        <div class="chord-card">
+          <div class="chord-card-name">E7</div>
+          <div class="chord-diagram"
+               data-voicing="0,2,0,1,0,0"
+               data-fingers="0,2,0,1,0,0"></div>
+          <div class="chord-card-notation">020100</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">A7</div>
+          <div class="chord-diagram"
+               data-voicing="x,0,2,0,2,0"
+               data-fingers="0,0,2,0,3,0"></div>
+          <div class="chord-card-notation">x02020</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">B7</div>
+          <div class="chord-diagram"
+               data-voicing="x,2,1,2,0,2"
+               data-fingers="0,2,1,3,0,4"></div>
+          <div class="chord-card-notation">x21202</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">D7</div>
+          <div class="chord-diagram"
+               data-voicing="x,x,0,2,1,2"
+               data-fingers="0,0,0,2,1,3"></div>
+          <div class="chord-card-notation">xx0212</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">G7</div>
+          <div class="chord-diagram"
+               data-voicing="3,2,0,0,0,1"
+               data-fingers="3,2,0,0,0,1"></div>
+          <div class="chord-card-notation">320001</div>
+        </div>
+
+        <div class="chord-card">
+          <div class="chord-card-name">C7</div>
+          <div class="chord-diagram"
+               data-voicing="x,3,2,3,1,0"
+               data-fingers="0,3,2,4,1,0"></div>
+          <div class="chord-card-notation">x32310</div>
+        </div>
+      </div>
+
+      <h2 id="progressions">7. Progressions essentielles</h2>
+
+      <h3>7.1 — La progression I-IV-V (la base de tout)</h3>
+      <p>En théorie : tu prends les degrés <strong>1, 4 et 5</strong> de la gamme majeure.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Tonalité</th><th>I</th><th>IV</th><th>V</th></tr></thead>
+          <tbody>
+            <tr><td>C majeur</td><td>C</td><td>F</td><td>G</td></tr>
+            <tr><td>G majeur</td><td>G</td><td>C</td><td>D</td></tr>
+            <tr><td>D majeur</td><td>D</td><td>G</td><td>A</td></tr>
+            <tr><td>A majeur</td><td>A</td><td>D</td><td>E</td></tr>
+            <tr><td>E majeur</td><td>E</td><td>A</td><td>B</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>C'est la base du blues, du rock'n'roll, de la country et de beaucoup de classiques. Si tu maîtrises 3 accords, tu joues déjà des centaines de morceaux.</p>
+
+      <h3>7.2 — Le blues 12 mesures (12-bar blues)</h3>
+      <p>Structure standard sur 12 mesures, exemple en <strong>E</strong> avec accords de 7e :</p>
+      <div class="progression">
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">A7</span>
+        <span class="progression-bar">A7</span>
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">B7</span>
+        <span class="progression-bar">A7</span>
+        <span class="progression-bar">E7</span>
+        <span class="progression-bar">B7</span>
+      </div>
+
+      <p><strong>Formule mémorisable :</strong></p>
+      <ul>
+        <li>4 mesures de I7 (E7)</li>
+        <li>2 mesures de IV7 (A7)</li>
+        <li>2 mesures de I7 (E7)</li>
+        <li>1 mesure de V7 (B7) &middot; 1 mesure de IV7 (A7) &middot; 1 mesure de I7 (E7) &middot; 1 mesure de V7 (B7) — appelée <strong>« turnaround »</strong></li>
+      </ul>
+
+      <blockquote>
+        <strong>Variante :</strong> beaucoup de bluesmen jouent un <em>« quick change »</em> — la mesure 2 devient un IV7 (A7) au lieu de rester sur E7. Les deux versions sont valides.
+      </blockquote>
+
+      <h3>7.3 — La progression I-V-vi-IV (Beatles / pop)</h3>
+      <p>Une des progressions les plus utilisées de la pop moderne. En <strong>C majeur</strong> :</p>
+      <div class="progression">
+        <span class="progression-bar">C</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">G</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">Am</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">F</span>
+      </div>
+      <p>C'est exactement la progression des couplets de <em>Let It Be</em> des Beatles. Le refrain inverse partiellement l'ordre :</p>
+      <div class="progression">
+        <span class="progression-bar">Am</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">G</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">F</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">C</span>
+      </div>
+
+      <h3>7.4 — La progression vi-IV-I-V</h3>
+      <p>Mêmes accords, ordre différent :</p>
+      <div class="progression">
+        <span class="progression-bar">Am</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">F</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">C</span>
+        <span class="progression-arrow">→</span>
+        <span class="progression-bar">G</span>
+      </div>
+      <p>Excellent exercice complémentaire car il oblige à transitionner dans un autre sens.</p>
+
+      <h2 id="exercices">8. Exercices d'application</h2>
+
+      <div class="practice-block">
+        <div class="label">Exercice 1</div>
+        <h4>Mémoire des formes</h4>
+        <p>Sans regarder la guitare, joue dans l'ordre : <strong>Em → E → A → Am → D → Dm</strong>. Énonce le nom de chaque accord à voix haute.</p>
+      </div>
+
+      <div class="practice-block">
+        <div class="label">Exercice 2</div>
+        <h4>Transitions à blanc</h4>
+        <p>Choisis 2 accords difficiles à enchaîner (par exemple <strong>C → G</strong>). Pose la première forme. Lève les doigts. Pose la seconde forme. Recommence. Vise <strong>20 transitions / minute</strong> sans gratter.</p>
+      </div>
+
+      <div class="practice-block">
+        <div class="label">Exercice 3</div>
+        <h4>Transitions au métronome</h4>
+        <p>Métronome à <strong>60 BPM</strong>. Joue C pendant 4 temps, puis change pour G pendant 4 temps. Boucle. Quand 95% des transitions sont propres, passe à 70 BPM, puis 80, puis 90.</p>
+      </div>
+
+      <div class="practice-block">
+        <div class="label">Exercice 4</div>
+        <h4>Le blues en E</h4>
+        <p>Joue un 12-bar blues complet en E avec accords de 7e (E7 / A7 / B7). Une mesure = 4 coups vers le bas. Tempo : 60 BPM, à monter progressivement.</p>
+      </div>
+
+      <div class="practice-block">
+        <div class="label">Exercice 5</div>
+        <h4>Let It Be (couplets)</h4>
+        <p>Boucle la progression <code>C - G - Am - F</code> (avec F simplifié <code>xx3211</code>). Une mesure par accord. Le but : tenir 4 cycles complets sans rupture rythmique.</p>
+      </div>
+
+      <div class="practice-block">
+        <div class="label">Exercice 6</div>
+        <h4>Découverte des barrés</h4>
+        <p>Pose un <strong>F barré (133211)</strong> sans gratter. Tiens-le 10 secondes, relâche. Recommence 10 fois. Ne cherche pas encore à le faire sonner — l'objectif est de muscler la main et de mémoriser la position.</p>
+      </div>
+
+      <hr>
+
+      <h2>Récap-mémo</h2>
+      <ol>
+        <li>Lire un schéma d'accord (SVG + notation compacte 6 chiffres)</li>
+        <li>Jouer les 8 accords ouverts : Em, Am, Dm, E, A, D, G, C — sans réfléchir</li>
+        <li>Jouer F simplifié (xx3211) avec mini-barré index</li>
+        <li>Comprendre la logique des barrés : forme E (référence corde 6) et forme A (référence corde 5)</li>
+        <li>Construire un I-IV-V dans n'importe quelle tonalité majeure</li>
+        <li>Jouer un 12-bar blues complet en E avec accords de 7e</li>
+        <li>Jouer la progression I-V-vi-IV (couplet de <em>Let It Be</em>)</li>
+      </ol>
+
+      <nav class="module-nav">
+        <a href="module-1.html">
+          <div class="label">← Précédent</div>
+          <div class="title">Module I — Manche</div>
+        </a>
+        <a href="module-3.html" class="next">
+          <div class="label">Suite →</div>
+          <div class="title">Module III — Programme</div>
+        </a>
+      </nav>
+
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Cours de guitare <span class="ornament">&middot;</span> Bases théoriques <span class="ornament">&middot;</span> Folk acoustique</p>
+  </div>
+</footer>
+
+<script src="chord-diagrams.js"></script>
+</body>
+</html>
